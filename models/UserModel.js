@@ -19,6 +19,9 @@ var UserSchema = new mongoose.Schema({
     pw: {
         type: String,
         required: true
+    },
+    upload: {
+        type: String
     }
 });
 

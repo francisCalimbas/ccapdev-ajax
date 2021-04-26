@@ -36,12 +36,14 @@ const signupController = {
         var lName = req.body.lName;
         var idNum = req.body.idNum;
         var pw = req.body.pw;
+        var upload = req.body.upload;
 
         var user = {
             fName: fName,
             lName: lName,
             idNum: idNum,
-            pw: pw
+            pw: pw,
+            upload: upload.toString()
         }
 
         /*

@@ -5,6 +5,8 @@ const express = require('express');
 // import module `hbs`
 const hbs = require('hbs');
 
+// const fileupload = require('express-fileupload');
+
 // import module `routes` from `./routes/routes.js`
 const routes = require('./routes/routes.js');
 
@@ -13,6 +15,8 @@ const db = require('./models/db.js');
 
 const app = express();
 const port = 9090;
+
+// app.use(fileupload());
 
 // set `hbs` as view engine
 app.set('view engine', 'hbs');
